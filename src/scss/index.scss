@@ -4,6 +4,9 @@
   max-width: 500px;
   background-color: gray;
   border-radius: 1rem;
+  margin: 2rem;
+
+  margin-inline: auto;
 }
 .Avatar {
   display: flex;
@@ -39,5 +42,47 @@
     &:hover {
       transform: scale(1.05);
     }
+  }
+}
+
+.postForm {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  background-color: white;
+  border-radius: 2rem;
+  padding: 2rem;
+
+  margin: 2rem auto;
+  border: 2px solid black;
+  input {
+    border: none;
+    outline: none;
+    font-size: 125%;
+    padding-top: 1rem;
+    letter-spacing: 1px;
+    border-bottom: 1px solid black;
+    padding: 1rem 1rem 0.5rem 1rem;
+  }
+  textarea {
+    border: none;
+    outline: none;
+    font-size: 150%;
+    padding: 1rem;
+    resize: none;
+
+    height: 6rem;
+  }
+  button {
+    background-color: #1da1f2;
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    display: block;
+    width: 6rem;
+    border-radius: 4rem;
+    margin-left: auto;
+    color: white;
+    font-size: 115%;
   }
 }
