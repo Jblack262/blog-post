@@ -1,9 +1,9 @@
 import React from 'react';
-import { FaThumbsDown, FaThumbsUp } from "react-icons/fa";
+import { FiThumbsDown, FiThumbsUp } from "react-icons/fi";
 
 class LikeDislike extends React.Component {
   state = {
-    count: 0
+    count: 0,
   };
 
   handleThumbsUp = e => {
@@ -18,9 +18,9 @@ class LikeDislike extends React.Component {
   render() {
     return (
       <div className="likeDislike">
-        <i className="material-icons" onClick={this.handleThumbsUp}> <FaThumbsUp /> </i>
+        <i className="material-icons" onClick={this.handleThumbsUp}> <FiThumbsUp/> </i>
         <h3 className="counter">{this.state.count}</h3>
-        <i className="material-icons" onClick={this.handleThumbsDown}> <FaThumbsDown /> </i>
+        <i className="material-icons" onClick={this.handleThumbsDown}> <FiThumbsDown /> </i>
       </div>
     );
   }
